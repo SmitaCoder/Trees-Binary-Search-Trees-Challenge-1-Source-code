@@ -84,6 +84,17 @@ public class TreeNode {
         }
     }
 
+    public int height(){
+        int leftHeight = 0;
+        int rightHeight = 0;
+        if(leftChild!=null){
+            leftHeight = 1+leftChild.height();
+        }
+        if(rightChild!=null){
+            rightHeight = 1+rightChild.height();
+        }
+        return leftHeight > rightHeight ? leftHeight : rightHeight;
+    }
     public int getData() {
         return data;
     }

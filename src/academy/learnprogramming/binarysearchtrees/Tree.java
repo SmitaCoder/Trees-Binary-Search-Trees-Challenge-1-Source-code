@@ -78,4 +78,21 @@ public class Tree {
             root.traversePreOrder();
         }
     }
+
+    public int height(){
+        int treeHeight=0;
+        if(root!=null){
+            treeHeight = root.height();
+        }
+        return treeHeight;
+        //int leftHeight = 0;
+        //int rightHeight = 0;
+//        if(root.getLeftChild()!=null){
+//            leftHeight = 1+root.getLeftChild().height();
+//        }
+//        if(root.getRightChild()!=null){
+//            rightHeight = 1+root.getRightChild().height();
+//        }
+//        return leftHeight > rightHeight ? leftHeight : rightHeight;
+    }
 }

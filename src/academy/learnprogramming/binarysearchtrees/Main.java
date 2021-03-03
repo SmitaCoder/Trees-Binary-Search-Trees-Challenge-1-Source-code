@@ -15,11 +15,16 @@ public class Main {
 	    intTree.insert(22);
 	    intTree.insert(32);
 	    intTree.insert(17);
+		//intTree.insert(33);
 
         intTree.traverseInOrder();
         System.out.println();
         System.out.println("Pre Order traversal below :");
 		intTree.traversePreOrder();
+		System.out.println();
+
+		System.out.println("Height of the tree is below :"+intTree.height());
+
 //
 //        System.out.println(intTree.get(27));
 //        System.out.println(intTree.get(17));
